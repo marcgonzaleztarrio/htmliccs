@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 
+#current {
+    color: #093A3E;
+}
 
 label input {
     display: none;
@@ -9,7 +12,7 @@ label input {
 body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
-    background-color: #69D2e7;
+    background-color: #F5F5F5;
 }
 
 .header {
@@ -18,21 +21,20 @@ body {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    height: 123px;
 }
 
 .titol {
     display: flex;
     position: relative;
-    left: 17vh;
+    left: 131px;
     gap: 10px;
     align-items: center;
 }
 
 .logo img {
-    width: 45px;
     width: 70px;
     height: 48.31px;
-
 }
 
 
@@ -45,23 +47,26 @@ body {
 
 
 label ul {
-    gap: 30px;
     align-items: center;
 }
 
 label li {
     list-style-type: none;
     display: inline-block;
-
 }
 
 label a {
-    margin: 0px;
+    margin: 10px;
     font-weight: 400;
     font-size: 20px;
     line-height: 125%;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+label {
+    margin: 2em;
+    margin-right: 131px;
 }
 
 
@@ -74,6 +79,10 @@ label a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .header {
+        height: 70px;
+    }
+
     .text {
         display: none;
     }
@@ -85,29 +94,8 @@ label a {
     .titol {
         display: flex;
         left: 2em;
-    }
-
-    .titol h1 {
         font-size: 30px;
-    }
 
-    .portfolio {
-        font-size: 40px;
-    }
-
-    .works h2 {
-        margin: 30px 0px 16px 0px;
-
-    }
-
-    .xarxes {
-        width: 50%;
-        text-align: left;
-    }
-
-    .ultima {
-        width: 50%;
-        text-align: right;
     }
 
     label .menu {
@@ -190,6 +178,10 @@ label a {
         opacity: 1;
     }
 
+    label {
+        margin: 0;
+    }
+
     label ul {
         z-index: 200;
         position: absolute;
@@ -212,40 +204,78 @@ label a {
         color: #74C69D;
         text-decoration: none;
         font-size: 1.5em;
+        margin: 0px;
     }
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-    ...
-} */
+/*-------------Footer styles------------- */
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-    ...
-} */
+footer {
+    bottom: 0;
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-    ...
-} */
+.bottom {
+    background: #74C69D;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    height: 123px;
+}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-    ...
-} */
+.xarxes {
+    margin-left: 131px;
+    width: 100%;
+    padding-top: 51px;
+    padding-bottom: 49px;
 
-/* @media screen and (max-width:775px) {}
+}
 
-@media screen and (min-width:1114px) {
-    .exemples img {
-        height: auto;
-        width: 570px;
+.ultima {
+    width: 100%;
+    text-align: right;
+    margin-right: 131px;
+}
 
+.ultima p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-top: 51px;
+    padding-bottom: 49px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bottom {
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 
-    .exemples {
-        margin: 82.23px 130px 0px 130px;
+    .xarxes {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
-} */
+
+    .ultima {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ultima p {
+        padding: 0;
+    }
+}
