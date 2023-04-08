@@ -2,8 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 
 
+
+/* Estilos generales */
 html {
     font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f5f5f5;
+}
+
+:root {
+    --primary-color: #74C69D;
+}
+
+
+/* Encabezado */
+.header {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    height: 123px;
+}
+
+.logo img {
+    width: 1.953125%;
+    height: auto;
+}
+
+.titol {
+    display: flex;
+    position: relative;
+    left: 8.1875%;
+    gap: 10px;
+    align-items: center;
+}
+
+.titol h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
 }
 
 #current {
@@ -13,44 +57,6 @@ html {
 label input {
     display: none;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Work Sans', sans-serif;
-    background-color: #F5F5F5;
-}
-
-.header {
-    background: #74C69D;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    height: 123px;
-}
-
-.titol {
-    display: flex;
-    position: relative;
-    left: 131px;
-    gap: 10px;
-    align-items: center;
-}
-
-.logo img {
-    width: 70px;
-    height: 48.31px;
-}
-
-
-.titol h1 {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 50px;
-    color: #FFFFFF;
-}
-
 
 label ul {
     align-items: center;
@@ -62,7 +68,6 @@ label li {
 }
 
 label a {
-    /* display: none; */
     margin: 10px;
     font-weight: 400;
     font-size: 20px;
@@ -92,7 +97,7 @@ footer {
 }
 
 .bottom {
-    background: #74C69D;
+    background: var(--primary-color);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -193,7 +198,7 @@ footer {
         left: 50px;
         width: 30px;
         height: 2px;
-        background: #74C69D;
+        background: var(--primary-color);
         display: block;
         -webkit-transform-origin: center;
         transform-origin: center;
