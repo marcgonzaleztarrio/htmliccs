@@ -193,7 +193,7 @@ footer {
         left: 50px;
         width: 30px;
         height: 2px;
-        background: #69D2e7;
+        background: #74C69D;
         display: block;
         -webkit-transform-origin: center;
         transform-origin: center;
@@ -210,7 +210,7 @@ footer {
         display: block;
         width: 100%;
         height: 100%;
-        background: #69d2e7;
+        background: #74C69D;
     }
 
     label .hamburger:before {
