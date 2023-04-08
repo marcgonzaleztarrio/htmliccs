@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>startup webpage Miha</title>
     <link rel="stylesheet" href="./styles/header&footer.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
     <div class="header">
       <div class="titol">
-        <img id="logo" src="../public/logoNav.svg" alt="logo" />
+        <img id="logo" src="./public/headerFooter/logoNav.svg" alt="logo" />
         <h1>Start</h1>
       </div>
       <label>
@@ -23,43 +24,37 @@
         </ul>
       </label>
     </div>
-      <div class="lesdoscaixes">
-        <div class="caixa1">
-          <div class="header2">
-            <div class="welcome">
-              <h2>WELCOME</h2>
-            </div>
-            <div class="lorem">
-              <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>
-            <div class="petitlorem">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos
-                error ipsum, voluptate culpa nesciunt delectus iste?
-              </p>
-            </div>
+
+    <section class="navBar2">
+      <div class="texto-navBar2">
+        <h4>Welcome</h4>
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+          nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+          voluptate culpa nesciunt delectus iste?
+        </p>
+        <div>
+          <div class="rectangle">
+            <button class="button">Explore</button>
           </div>
-          <div class="bottonexplore">
-            <img src="media\Textboton explorar.png" alt="bottonexplore" />
-          </div>
-        </div>
-        <div class="caixa2">
-          <img src="media\Groupfoto.png" alt="foto" />
         </div>
       </div>
-    </div>
+      <img src="./public/homePage/Groupfoto.png" alt="home image" />
+    </section>
 
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+    <footer>
+      <div class="bottom">
+        <div class="xarxes">
+          <img
+            src="../public/headerFooter/xarxesSocials.svg"
+            alt="xarxes socials"
+          />
+        </div>
+        <div class="ultima">
+          <p>© Start, 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
