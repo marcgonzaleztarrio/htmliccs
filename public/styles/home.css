@@ -13,7 +13,6 @@ html {
     align-items: center;
     padding: 2rem 7rem 6rem 7rem;
     gap: 2rem;
-
 }
 
 .header {
@@ -70,4 +69,25 @@ section img {
     width: 60%;
     height: 60%;
     padding-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navBar2 {
+        background: #74C69D;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        /* gap: 2rem; */
+        align-items: center;
+        padding: 1rem 1rem 2rem 1rem;
+        /* gap: 2rem; */
+    }
+
+
+    section img {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+    }
 }
