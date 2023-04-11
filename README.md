@@ -1,8 +1,9 @@
 # Web project
 
-#DEMO
+Basic project vanilla html & css.
+
+#Demo
 
 # https://startupwebpagemiha.vercel.app
 
-[Suuuu](https://startupwebpagemiha.vercel.app)
 
