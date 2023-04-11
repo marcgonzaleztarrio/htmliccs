@@ -1,6 +1,3 @@
-markdown_extensions:
-  - attr_list
-
 # Web project
 
 # https://startupwebpagemiha.vercel.app{:target="_blank"}
@@ -12,3 +9,7 @@ markdown_extensions:
  <a href="placeholder.com" target="_blank">Opens in new tab</a>
  
  ["http://google.com/"]: http://google.co
+ 
+ 
+ <a href="https://www.google.com" target="_blank">Ir a Google</a>
+
