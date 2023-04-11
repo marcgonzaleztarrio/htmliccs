@@ -1,3 +1,3 @@
-# htmliccs
+# Web project
 
-# https://startupwebpagemiha.vercel.app
+# https://startupwebpagemiha.vercel.app{:target="_blank"}
