@@ -93,39 +93,25 @@
 
     .grid-container {
         margin-top: 45px;
-        display: grid;
-        gap: 55px;
+        /* Establecer un margen superior */
         grid-template-columns: auto;
-        justify-content: center;
+        /* Establecer una sola columna de ancho automático */
     }
 
     .grid-item img {
         width: 22.336rem;
+        /* Establecer un ancho fijo de 22.336rem (358px) */
         height: 14rem;
+        /* Establecer una altura fija de 14rem (224px) */
     }
 
     .boton {
-        justify-content: center;
-        display: flex;
-        position: relative;
         margin: 30px 0px 30px 0px;
-    }
-
-    .button {
-        background-color: #212529;
-        color: #FFFFFF;
-        border-radius: 5px;
-        padding-bottom: 10px;
-        padding-top: 13px;
-        padding-left: 29.5px;
-        padding-right: 29.5px;
-        font-size: 20px;
-        font-family: sans-serif;
-        font-weight: 400;
+        /* Establecer un margen superior e inferior de 30px y un margen izquierdo y derecho de 0px */
     }
 
     .lorem p {
         margin: 16px 20px;
+        /* Establecer un margen superior e inferior de 16px y un margen izquierdo y derecho de 20px */
     }
-
 }

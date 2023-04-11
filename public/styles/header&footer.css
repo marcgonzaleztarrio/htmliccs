@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 
-
+/* Estilos para el navBar i footer de todas las paginas */
 
 /* Estilos generales */
 html {
@@ -130,160 +130,237 @@ footer {
     padding-bottom: 49px;
 }
 
+/* responsive */
 
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     .bottom {
         justify-content: center;
+        /* Centra los elementos hijos horizontalmente */
         flex-direction: column;
+        /* Establece la dirección de los elementos hijos a columna */
         text-align: center;
+        /* Centra el texto horizontalmente */
         gap: 20px;
+        /* Establece un espacio entre los elementos hijos */
     }
 
     .xarxes {
         padding: 0;
+        /* Elimina el relleno interno del elemento */
         margin: 0;
+        /* Elimina los márgenes externos del elemento */
     }
 
     .ultima {
         padding: 0;
+        /* Elimina el relleno interno del elemento */
         margin: 0;
+        /* Elimina los márgenes externos del elemento */
         text-align: center;
+        /* Centra el texto horizontalmente */
     }
 
     .ultima p {
         padding: 0;
+        /* Elimina el relleno interno del elemento 'p' */
     }
 
     .header {
         height: 70px;
+        /* Establece la altura del elemento a 70px */
     }
 
     .text {
         display: none;
+        /* Oculta el elemento */
     }
 
     #logo {
         width: 45px;
+        /* Establece el ancho del elemento a 45px */
     }
 
     .titol {
         display: flex;
+        /* Convierte el elemento en un contenedor flexible */
         left: 1em;
+        /* Establece la distancia entre el borde izquierdo del elemento y su contenedor padre en 1em */
         font-size: 30px;
-
+        /* Establece el tamaño de fuente del elemento a 30px */
     }
 
     label .menu {
         position: absolute;
+        /* Establece la posición del elemento como absoluta */
         right: -100px;
+        /* Establece la distancia entre el borde derecho del elemento y su contenedor padre en -100px */
         top: -100px;
+        /* Establece la distancia entre el borde superior del elemento y su contenedor padre en -100px */
         z-index: 100;
+        /* Establece la posición de apilamiento del elemento */
         width: 200px;
+        /* Establece el ancho del elemento a 200px */
         height: 200px;
+        /* Establece la altura del elemento a 200px */
         background: #FFF;
+        /* Establece el color de fondo del elemento como blanco */
         border-radius: 50% 50% 50% 50%;
+        /* Establece el radio de los bordes del elemento como 50% */
         -webkit-transition: .5s ease-in-out;
+        /* Establece una transición de 0.5 segundos con efecto 'ease-in-out' para los cambios de estilo en navegadores webkit */
         transition: .5s ease-in-out;
+        /* Establece una transición de 0.5 segundos con efecto 'ease-in-out' para los cambios de estilo */
         box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        /* Establece una sombra en el elemento con 0 desenfoque y 0 distancia en las direcciones x e y */
         cursor: pointer;
-
+        /* Cambia el cursor del ratón al apuntar sobre el elemento a una mano indicando que es un elemento clickable */
     }
 
     label .hamburger {
         position: absolute;
+        /* Establece la posición del botón como absoluta */
         top: 135px;
+        /* Establece la distancia entre el borde superior del botón y su contenedor padre en 135px */
         left: 50px;
+        /* Establece la distancia entre el borde izquierdo del botón y su contenedor padre en 50px */
         width: 30px;
+        /* Establece el ancho del botón a 30px */
         height: 2px;
+        /* Establece la altura del botón a 2px */
         background: var(--primary-color);
+        /* Establece el color de fondo del botón como una variable personalizada */
         display: block;
-        -webkit-transform-origin: center;
+        /* Establece el botón como un elemento en bloque */
         transform-origin: center;
-        -webkit-transition: .5s ease-in-out;
+        /* Establece el origen de la transformación como el centro del botón */
         transition: .5s ease-in-out;
+        /* Establece una transición de medio segundo con una función de aceleración y desaceleración */
     }
 
     label .hamburger:after,
     label .hamburger:before {
-        -webkit-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
+        /* Establece una transición de medio segundo con una función de aceleración y desaceleración */
         content: "";
+        /* Elimina el contenido predeterminado del pseudo-elemento */
         position: absolute;
+        /* Establece la posición de los pseudo-elementos como absoluta */
         display: block;
+        /* Establece los pseudo-elementos como elementos en bloque */
         width: 100%;
+        /* Establece el ancho de los pseudo-elementos al 100% del ancho del botón */
         height: 100%;
+        /* Establece la altura de los pseudo-elementos al 100% del alto del botón */
         background: #74C69D;
+        /* Establece el color de fondo de los pseudo-elementos como un color predeterminado */
     }
 
     label .hamburger:before {
         top: -10px;
+        /* Establece la distancia entre el borde superior del pseudo-elemento :before y el borde superior del botón en -10px */
     }
 
     label .hamburger:after {
         bottom: -10px;
+        /* Establece la distancia entre el borde inferior del pseudo-elemento :after y el borde inferior del botón en -10px */
     }
 
     label input {
         display: none;
+        /* Oculta el botón de selección */
     }
 
     label input:checked+.menu {
         box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        /* Establece una sombra en el botón del menú */
         border-radius: 0;
+        /* Elimina el radio de los bordes del botón del menú */
     }
 
+    /* Estilos para el elemento 'hamburger' cuando el input 'checkbox' de su contenedor padre está seleccionado */
     label input:checked+.menu .hamburger {
         -webkit-transform: rotate(45deg);
+        /* Aplica una rotación de 45 grados al elemento 'hamburger' */
         transform: rotate(45deg);
+        /* Aplica una rotación de 45 grados al elemento 'hamburger' */
     }
 
+    /* Estilos para el elemento 'after' del elemento 'hamburger' cuando el input 'checkbox' de su contenedor padre está seleccionado */
     label input:checked+.menu .hamburger:after {
         -webkit-transform: rotate(90deg);
+        /* Aplica una rotación de 90 grados al elemento 'after' del elemento 'hamburger' */
         transform: rotate(90deg);
+        /* Aplica una rotación de 90 grados al elemento 'after' del elemento 'hamburger' */
         bottom: 0;
+        /* Establece la distancia entre el borde inferior del elemento y su contenedor padre en 0 */
     }
 
+    /* Estilos para el elemento 'before' del elemento 'hamburger' cuando el input 'checkbox' de su contenedor padre está seleccionado */
     label input:checked+.menu .hamburger:before {
         -webkit-transform: rotate(90deg);
+        /* Aplica una rotación de 90 grados al elemento 'before' del elemento 'hamburger' */
         transform: rotate(90deg);
+        /* Aplica una rotación de 90 grados al elemento 'before' del elemento 'hamburger' */
         top: 0;
+        /* Establece la distancia entre el borde superior del elemento y su contenedor padre en 0 */
     }
 
+    /* Estilos para el elemento 'ul' que sigue inmediatamente al input 'checkbox' de su contenedor padre cuando este está seleccionado */
     label input:checked+.menu+ul {
         opacity: 1;
+        /* Establece la opacidad del elemento 'ul' en 1 */
     }
 
+    /* Estilos para el elemento 'label' */
     label {
         margin: 0;
+        /* Establece el margen del elemento 'label' en 0 */
     }
+
 
     label ul {
         z-index: 200;
+        /* Establece la posición de apilamiento del elemento */
         position: absolute;
+        /* Establece la posición del elemento como absoluta */
         top: 30%;
+        /* Establece la distancia entre el borde superior del elemento y su contenedor padre en el 30% del contenedor */
         left: 30%;
+        /* Establece la distancia entre el borde izquierdo del elemento y su contenedor padre en el 30% del contenedor */
         -webkit-transform: translate(-50%, -50%);
+        /* Transforma el elemento en 50% en el eje x y 50% en el eje y */
         transform: translate(-50%, -50%);
+        /* Transforma el elemento en 50% en el eje x y 50% en el eje y */
         opacity: 0;
+        /* Establece la opacidad del elemento a 0 */
         -webkit-transition: .25s 0s ease-in-out;
+        /* Establece una transición con una duración de 0.25 segundos y un retraso de 0 segundos con una función de tiempo de entrada y salida */
         transition: .25s 0s ease-in-out;
+        /* Establece una transición con una duración de 0.25 segundos y un retraso de 0 segundos con una función de tiempo de entrada y salida */
         display: inline-block;
+        /* Establece la visualización del elemento como en línea con un tamaño de bloque */
     }
 
     label li {
         display: inline;
+        /* Establece la visualización del elemento como en línea */
         margin-right: 10px;
+        /* Establece el margen derecho del elemento en 10px */
     }
 
     label a {
         color: #74C69D;
+        /* Establece el color del texto del elemento en #74C69D */
         text-decoration: none;
+        /* Elimina la decoración de subrayado del enlace */
         font-size: 1.5em;
+        /* Establece el tamaño de la fuente del elemento en 1.5em */
         margin: 0px;
+        /* Establece el margen del elemento en 0px */
         display: contents;
+        /* Establece la visualización del elemento como el contenido de su contenedor padre */
     }
+
 
 }

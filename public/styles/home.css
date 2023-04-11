@@ -5,6 +5,13 @@ html {
     font-size: 16px;
 }
 
+.main {
+    justify-content: center;
+    position: relative;
+}
+
+/* navBar 2 css */
+
 .navBar2 {
     background: #74C69D;
     display: flex;
@@ -15,12 +22,7 @@ html {
     gap: 2rem;
 }
 
-.header {
-    margin: 0;
-}
-
 .texto-navBar2 {
-
     color: #FFFFFF;
 }
 
@@ -65,17 +67,15 @@ html {
     margin-top: 1rem;
 }
 
-section img {
+.navBar2 img {
     width: 60%;
     height: 60%;
     padding-top: 1rem;
 }
 
+/* partners */
 
-.main {
-    justify-content: center;
-    position: relative;
-}
+
 
 .intro {
     margin-top: 60px;
@@ -115,11 +115,10 @@ section img {
     line-height: 125%;
     text-align: center;
     color: #000000;
-}
-
-.lorem p {
     margin: 16px 0px 0px 0px;
 }
+
+/* media images */
 
 .grid-container {
     margin-top: 55px;
@@ -156,6 +155,12 @@ section img {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 400;
+}
+
+/* articulos  */
+
+.articulos {
+    margin-bottom: 6rem;
 }
 
 .section1 {
@@ -204,9 +209,7 @@ section img {
     height: 29rem;
 }
 
-.articulos {
-    margin-bottom: 6rem;
-}
+/* team */
 
 .team-section {
     margin: 45px 0px 45px 0px;
@@ -252,43 +255,93 @@ h5,
     margin-bottom: 55px;
 }
 
+/* responsive */
+
 @media only screen and (max-width: 600px) {
 
+    /* Colocar la imagen de la barra de navegación arriba y centrada */
     .navBar2 {
-        background: #74C69D;
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
+        /* Cambia la dirección de la columna de flexbox */
         padding: 1rem 1rem 2rem 1rem;
+        /* Ajusta el relleno */
     }
 
-
-    section img {
-        width: 100%;
-        height: auto;
-        padding-top: 1rem;
+    /* Ajustar el tamaño de la imagen de la barra de navegación */
+    .navBar2 img {
+        width: 90vw;
+        /* Establecer el ancho de la imagen en un 90% del ancho total de la pantalla */
     }
 
+    /* Ajustar el tamaño de las imágenes de la sección */
+    .section-item img {
+        width: 80vw;
+        /* Establecer el ancho de la imagen en un 80% del ancho total de la pantalla */
+        height: 50vh;
+        /* Establecer la altura de la imagen en un 50% de la altura total de la pantalla */
+        text-align: center;
+        /* Centrar la imagen horizontalmente */
+    }
+
+    /* Ajustar la cuadrícula de elementos */
     .grid-container {
         gap: 40px;
+        /* Ajustar el espacio entre elementos */
         grid-template-columns: auto;
+        /* Establecer una sola columna */
     }
 
+    /* Ajustar la sección 1 */
     .section1 {
-        margin: 0 100px 0 100px;
-        display: grid;
-        gap: 50px;
-        grid-template-areas: unset;
-        align-items: center;
+        margin: 0 20px 0 20px;
+        /* Reducir el margen en los lados */
+        display: flex;
+        /* Cambiar el display a flex */
+        flex-direction: column;
+        /* Cambiar la dirección de la columna de flexbox */
+        gap: 0px;
+        /* Ajustar el espacio entre elementos */
     }
 
+    /* Ajustar la sección 2 */
+    .section2 {
+        display: flex;
+        /* Cambiar el display a flex */
+        flex-direction: column-reverse;
+        /* Cambiar la dirección de la columna de flexbox */
+        align-items: center;
+        /* Centrar verticalmente los elementos */
+    }
+
+    /* Ajustar la sección de equipo */
     .team-section {
         gap: 35px;
+        /* Ajustar el espacio entre elementos */
         grid-template-columns: auto;
+        /* Establecer una sola columna */
     }
 
+    /* Ajustar el relleno de los elementos de persona */
     .persons {
         padding: 1rem 2rem 1rem 2rem;
+        /* Ajustar el relleno */
+    }
+
+    /* Ajustar el espaciado de los artículos */
+    .articulos {
+        gap: 2rem;
+        /* Ajustar el espacio entre elementos */
+        margin-bottom: 4rem;
+        /* Ajustar el margen inferior */
+        display: flex;
+        /* Cambiar el display a flex */
+        flex-direction: column;
+        /* Cambiar la dirección de la columna de flexbox */
+    }
+
+    /* Ajustar el margen en la sección principal */
+    .main {
+        margin: 0 20px 0 20px;
+        /* Reducir el margen en los lados */
     }
 }

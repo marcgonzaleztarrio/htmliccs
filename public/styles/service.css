@@ -233,12 +233,15 @@ label {
 
     .grid-container {
         gap: 3.125rem;
+        /* Establecer la separación entre elementos internos */
         grid-template-columns: auto;
+        /* Establecer una sola columna de ancho automático */
         margin-bottom: 4.25rem;
+        /* Establecer un margen inferior */
     }
 
     .lorem p {
         margin: 16px 20px;
+        /* Establecer un margen superior e inferior de 16px y un margen izquierdo y derecho de 20px */
     }
-
 }

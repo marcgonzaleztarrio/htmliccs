@@ -110,27 +110,43 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 600px) {
     .inputs {
+        /* Establece un contenedor flexible */
         display: flex;
+        /* Establece la dirección principal del contenido del contenedor */
         flex-direction: column;
+        /* Establece la alineación de los elementos a lo largo del eje principal */
         justify-content: center;
+        /* Establece la separación entre los elementos del contenedor */
         gap: 2rem;
+        /* Establece el margen en todas las direcciones del contenedor */
         margin: 1rem;
+        /* Establece el margen superior del contenedor */
         margin-top: 2rem;
     }
 
     input[type=text],
     input[type=email] {
+        /* Establece el ancho del elemento de entrada de texto */
         width: 100%;
+        /* Establece el relleno en las direcciones vertical y horizontal */
         padding: 12px 20px;
+        /* Establece el elemento de entrada de texto como un elemento en línea y bloque */
         display: inline-block;
+        /* Establece el borde del elemento de entrada de texto */
         border: 1px solid #ccc;
+        /* Establece el radio de los bordes del elemento de entrada de texto */
         border-radius: 4px;
+        /* Establece el tamaño de la caja que contiene el elemento de entrada de texto */
         box-sizing: border-box;
+        /* Establece la altura del elemento de entrada de texto */
         height: 38px;
     }
 
     .mapas img {
+        /* Establece el ancho de la imagen del mapa */
         width: 100%;
+        /* Establece el margen inferior de la imagen del mapa */
         margin-bottom: 59px;
     }
+
 }
